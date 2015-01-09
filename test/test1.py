@@ -1,8 +1,12 @@
 __author__ = 'chenwei'
 # -*- coding: utf-8 -*-
-print len("ABC")
-print len(u'ABC')
-print len(u'中文')
-print len('\xe4\xb8\xad\xe6\x96\x87')
+def calc(*numbers):
+    sum = 0
+    for number in numbers:
+        sum = sum + number*number
+    return sum
 
-print '%s',('\xe4\xb8\xad\xe6\x96\x87')
+a=[1,2,3,4]
+print calc(1,2,3,4)
+print calc(a[0],a[1],a[2],a[3])
+print calc(*a)
