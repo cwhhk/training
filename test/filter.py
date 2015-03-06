@@ -10,5 +10,4 @@ def isNotPrime(n):
             return True
     return False
 
-print isNotPrime(2)
 print filter(isNotPrime,range(1,101))
